@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Unsplash</title>
+	<script src="jquery-3.6.1.min.js"></script>
+	<script src="script.js"></script>
+	 <meta http-equiv="Content-Security-Policy" content="default-src *;img-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">
+</head>
+<body>
+<form autocomplete="off">
+	<input type="text" name="name" placeholder="Name">
+	<input type="number" name="width" class="h" placeholder="Width">
+	<input type="number" name="height" class="h" placeholder="Height">
+	<input type="text" name="txt" placeholder="Text">
+	<input type="text" name="txt-align" placeholder="Text Position" value="middle,center">
+	<input type="text" name="txt-font" placeholder="Text Font" value="TrebuchetMS">
+	<input type="number" name="txt-size" class="h" placeholder="Text Size">
+	<input type="text" name="txt-color" class="h" placeholder="Text Color">
+
+	<input type="number" name="fp-y" class="h" placeholder="Y">
+	<input type="text" name="fp-x" class="h" placeholder="X">
+
+	<input type="submit" name="submit" value="Crop">
+</form>
+</body>
+</html>
+
+<style type="text/css">
+	form {grid-column: span 9;grid-template-columns: repeat(4, [col] 1fr);grid-gap: 5px;display: grid;width: 230px;}
+	input[type=number] ,
+	input[type=text] {border: 1px solid #cdcdcd;padding: 9px;grid-column: span 4;border-radius: 2px;font-size: 12px;}
+	.h { grid-column: span 2 !important;}
+	a {grid-column: span 4;}
+	a img {width: 100%}
+</style>

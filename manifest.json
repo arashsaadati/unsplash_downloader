@@ -1,0 +1,16 @@
+{
+    "name": "Unsplash Downloader",
+    "version": "1.0.0",
+    "description": "Download UNSPLASH image",
+    "author": "Arash Saadati",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    },
+    "background": {
+        "scripts": ["jquery-3.6.1.min.js","script.js"]
+    },
+    "manifest_version": 2,
+    "permissions": [ "tabs", "activeTab" ]
+}
+
